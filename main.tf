@@ -19,8 +19,6 @@ resource "azurerm_storage_account" "this" {
   enable_https_traffic_only = true
 
   tags = merge({}, local.tags)
-
-  depends_on = [azurerm_resource_group.this]
 }
 
 resource "azurerm_storage_account_network_rules" "example" {
