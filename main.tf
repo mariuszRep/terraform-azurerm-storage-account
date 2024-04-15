@@ -4,12 +4,6 @@ locals {
   }, var.tags)
 }
 
-# Create a resource group
-resource "azurerm_resource_group" "this" {
-  name     = var.resource_group_name
-  location = var.location
-}
-
 # Create an Azure Storage Account
 resource "azurerm_storage_account" "this" {
   name                     = var.name

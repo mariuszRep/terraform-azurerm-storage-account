@@ -11,8 +11,8 @@ variable "location" {
 variable "tags" {
   type        = map(string)
   description = "Optional tags to add to resources"
+  default = {}
 }
-
 
 ## azurerm_storage_account
 variable "name" {
